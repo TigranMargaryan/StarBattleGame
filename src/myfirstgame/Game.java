@@ -17,6 +17,7 @@ import myclasses.EntityB;
 
 public class Game extends Canvas implements Runnable {
 	private boolean solo = true;
+	private int non = 0;
 	public static String str1 ="";
 	public static String str = "";
 	private static final long serialVersionUID = 1L;

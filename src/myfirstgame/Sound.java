@@ -3,7 +3,6 @@ package myfirstgame;
 import java.applet.Applet;
 import java.applet.AudioClip;
 
-@SuppressWarnings("deprecation")
 public class Sound {
 
 	public static final Sound sound1 = new Sound("/gameover.wav"); 

@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GetSQL {
 	
@@ -14,6 +16,7 @@ public class GetSQL {
 	public static int score1;
 	public static int max = 1;
 	public static String namemax = "";
+	public static Map<String,Integer> scormap = new HashMap<>();
 	public void render() {
 		
 		
@@ -28,16 +31,20 @@ public class GetSQL {
 			while(r.next()) {
 				strname1 = r.getNString("name");
 				score1 = r.getInt("point");
-				if(score1 > max)
+				
+				scormap.put(strname1,score1);
+				/*if(score1 > max)
 					{
 					max = score1;
 					namemax = strname1;
 					}
+					*/
+				
 			
-			;
+			
 			}
-			System.out.println("ytyy++++++++++++++++");
-			System.out.println(max + "     " + namemax );
+		//	System.out.println("ytyy++++++++++++++++");
+	//		System.out.println(max + "     " + namemax );
 			c.close();
 			
 		} catch (Exception e) {

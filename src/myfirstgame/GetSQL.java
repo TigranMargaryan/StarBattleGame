@@ -10,7 +10,7 @@ import java.util.Map;
 public class GetSQL {
 	
 	private String user = "root";
-	private String pass = "tlam142536";
+	private String pass = "root";
 	private String url = "jdbc:mysql://localhost:3306/game_score?autoReconnect=true&useSSL=false";
 	public static String strname1 ="";
 	public static int score1;

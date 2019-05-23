@@ -29,3 +29,7 @@
 |   └── myfirstgame------------------# base classes and data layer
 └── res------------------# all images and sounds
 ```
+-------
+
+### Configure MySQL DB
+Open MySQL Workbench and create new schema, name `game_score`. Click `Server` button in the menu bar chose `Data import`. Go to the StarBattleGame folder and add Scope folder in the MySQL impoert file. Click Start Import button.
